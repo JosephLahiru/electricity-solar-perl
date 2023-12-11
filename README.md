@@ -1,89 +1,46 @@
-# electricity-solar-perl
-
-Here is a dissertation on physical science for your enlightenment.
-I don't know where it came from so it must be true!
-
-[ Update: This appears to have come from Dave Barry, and the same text
-  can be found as:
-
-  http://www.uk.research.att.com/~fms/electricity.html
-  http://rachel.albany.edu/~jc9334/barry1.html
-
-  and many other places on the web.  I'd check with Dave, but he
-  doesn't respond to email any more (and life's too short for snail
-  mail) ]
-.....................................................................
-
-
-Today's scientific question is: What in the world is electricity and
-where does it go after it leaves the toaster?
-
-Here is a simple experiment that will teach you an important
-electrical lesson: On a cool dry day, scuff your feet along a carpet,
-then reach your hand into a friend's mouth and touch one of his dental
-fillings.  Did you notice how your friend twitched violently and cried
-out in pain?  This teaches one that electricity can be a very powerful
-force, but we must never use it to hurt others unless we need to learn
-an important lesson about electricity.
-
-It also illustrates how an electrical circuit works.  When you scuffed
-your feet, you picked up batches of "electrons", which are very small
-objects that carpet manufacturers weave into carpet so that they will
-attract dirt.  The electrons travel through your bloodstream and
-collect in your finger, where they form a spark that leaps to your
-friend's filling, then travel down to his feet and back into the
-carpet, thus completing the circuit.
-
-AMAZING ELECTRONIC FACT: If you scuffed your feet long enough without
-touching anything, you would build up so many electrons that your
-finger would explode!  But this is nothing to worry about unless you
-have carpeting.
-
-Although we modern persons tend to take our electric lights, radios,
-mixers, etc. for granted, hundreds of years ago people did not have
-any of these things, which is just as well because there was no place
-to plug them in.  Then along came the first Electrical Pioneer,
-Benjamin Franklin, who flew a kite in a lightning storm and received a
-serious electrical shock.  This proved that lightning was powered by
-the same force as carpets, but it also damaged Franklin's brain so
-severely that he started speaking only in incomprehensible maxims,
-such as, "A penny saved is a penny earned."  Eventually he had to be
-given a job running the post office.
-
-After Franklin came a herd of Electrical Pioneers whose names have
-become part of our electrical terminology: Myron Volt, Mary Louise
-Amp, James Watt, Bob Transformer, etc. These pioneers conducted many
-important electrical experiments.  Among them, Galvani discovered
-(this is the truth) that when he attached two different kinds of metal
-to the leg of a frog, an electrical current developed and the frog's
-leg kicked, even though it was no longer attached to the frog, which
-was dead anyway.  Galvani's discovery led to enormous advances in the
-field of amphibian medicine.  Today, skilled veterinary surgeons can
-take a frog that has been seriously injured or killed, implant pieces
-of metal in its muscles, and watch it hop back into the pond --
-almost.
-
-But the greatest Electrical Pioneer of them all was Thomas Edison, who
-was a brilliant inventor despite the fact that he had little formal
-education and lived in New Jersey.  Edison's first major invention in
-1877 was the phonograph, which could soon be found in thousands of
-American homes, where it basically sat until 1923, when the record was
-invented. But Edison's greatest achievement came in 1879 when he
-invented the electric company.  Edison's design was a brilliant
-adaptation of the simple electrical circuit: the electric company
-sends electricity through a wire to a customer, then immediately gets
-the electricity back through another wire, then (this is the brilliant
-part) sends it right back to the customer again.
-
-This means that an electric company can sell a customer the same batch
-of electricity thousands of times a day and never get caught, since
-very few customers take the time to examine their electricity closely.
-In fact, the last year any new electricity was generated was 1937.
-
-Today, thanks to men like Edison and Franklin, and frogs like
-Galvani's, we receive almost unlimited benefits from electricity.  For
-example, in the past decade scientists have developed the laser, an
-electronic appliance so powerful that it can vaporize a bulldozer 2000
-yards away, yet so precise that doctors can use it to perform delicate
-operations to the human eyeball, provided they remember to change the
-power setting from "Bulldozer" to "Eyeball."
+# CSCI 374 Perl Programming Project
+ 
+Due date: December 4, 2023
+How to submit: deposit your source code (with proper comments) and sample output proving the correctness of your program to Blackboard.
+ 
+You should not copy from others or let other students use your code. Violation to this policy will result in automatic fail. (I might even ask you to explain your code if necessary.)
+ 
+ 
+## Part 1: (20 points )
+ 
+Write a Perl program to accomplish each of the following on the file solar.txt (see link at the class homepage)
+ 
+1. Print all records that do not list a discoverer in the eighth field.
+2. ​Print every record after erasing the second field. Note: It would be better to say "print every record" omitting the second field.
+3. ​Print the records for satellites that have negative orbital periods. (A negative orbital period simply means that the satellite orbits in a counterclockwise direction.)
+4. Print the data for the objects discovered by the Voyager2 space probe.
+5. Print each record with the orbital period given in seconds rather than days.
+ 
+About solar.txt file:
+ 
+This file contains lines of 9 items, the first being:
+Adrastea XV Jupiter 129000 0.30 0.00 0.00 Jewitt 1979 in alphabetical order by the name of the planet or moon (first field). The text in [] is the corresponding field from the line above.
+The fields in this file are:
+ 
+1. Name of planet or moon [Adrastea]
+2. Number of moon or planet (roman numerals) [XV]
+3. Name of the abject around which the satellite orbits [Jupiter]
+4. Orbital radius (semimajor axis) in kilometers [129000]
+5. Orbital period in days [0.30]
+6. Orbital inclination in degrees [0.00]
+7. Orbital eccentricity [0.00]
+8. Discoverer [Jewitt]
+9. Year of discovery [1979]
+ 
+## Part 2: (20 points )
+ 
+Separate, count and sort the words in the example text file, electricity.txt (see link at the class homepage). Sort in the following orders and your output should be nicely lined up in columns to the output file.
+ 
+1. alphabetically (ignoring capitalization),
+2. alphabetically with upper case words just in front of lower case words with the same initial characters
+3. by frequency, from high to low, (any order for equal frequency)
+4. by frequency, with alphabetical order for words with the same frequency
+ 
+## Part 3: (10 points )
+ 
+Write a perl program that replaces all digits with the name of the digit, so every "0" is replaced with "zero", "1" is replaced with "one", ... "9" is replaced with "nine". Test your program with your own input file containing digits and letters. Your program should write the result to output file and you need to print both input and output files along with your source code.
